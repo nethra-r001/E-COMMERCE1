@@ -1,6 +1,6 @@
 {
 
-  "homepage": "https://github nethra-r001.github.io/E-COMMERCE",
+  "homepage": "https://github nethra-r001.github.io/E-COMMERCE1",
 
   "name": "temp-app",
 
@@ -14,7 +14,7 @@
 
     "build": "next build",
 
-    "start": "next start",
+    "start": "node db/setup.js && next start",
 
     "lint": "eslint",
 

@@ -10,10 +10,10 @@ async function setup() {
     fs.mkdirSync(dbDir, { recursive: true });
   }
 
-  const dbPath = path.join(dbDir, "ecommerce.sqlite");
+  const dbPath = process.env.DATABASE_PATH || path.join(dbDir, "ecommerce.sqlite");
   if (fs.existsSync(dbPath)) {
-    console.log("Deleting existing SQLite database to start fresh...");
-    fs.unlinkSync(dbPath);
+    console.log("Database file already exists. Skipping setup to protect data.");
+    return;
   }
   console.log(`Setting up SQLite database at: ${dbPath}`);
 

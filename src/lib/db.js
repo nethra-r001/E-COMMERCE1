@@ -10,12 +10,12 @@ export async function getDb() {
     return dbInstance;
   }
 
-  const dbDir = path.join(process.cwd(), "db");
+  const dbPath = process.env.DATABASE_PATH || path.join(process.cwd(), "db", "ecommerce.sqlite");
+  const dbDir = path.dirname(dbPath);
   if (!fs.existsSync(dbDir)) {
     fs.mkdirSync(dbDir, { recursive: true });
   }
 
-  const dbPath = path.join(dbDir, "ecommerce.sqlite");
   dbInstance = await open({
     filename: dbPath,
     driver: sqlite3.Database,
