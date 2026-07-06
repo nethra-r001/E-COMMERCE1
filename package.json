@@ -14,7 +14,7 @@
 
     "build": "next build",
 
-    "start": "node db/setup.js && next start",
+    "start": "node db/setup.mjs && next start",
 
     "lint": "eslint",
 
