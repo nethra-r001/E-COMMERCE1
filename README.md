@@ -1,6 +1,6 @@
 E-CellCommerce
 
-# E-CellCommerce is a premium, secure, and lightning-fast full-stack storefront and administrative dashboard built with Next.js, SQLite, and raw SQL queries** . It features a modern **purple glassmorphic** user interface and is fully responsive across all screens.
+# E-CellCommerce is a premium, secure, and lightning-fast full-stack storefront and administrative dashboard built with Next.js, SQLite. It features a modern **purple glassmorphic** user interface and is fully responsive across all screens.
 
 ---
 
