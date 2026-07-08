@@ -23,7 +23,7 @@ E-CellCommerce
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 * **Framework**: Next.js (App Router, Pure JavaScript/JSX)
 * **Database**: SQLite (managed with promise-based connectors and pure raw SQL queries)
 * **Security**: JWT sessions, secure cookie-based route guards (`proxy.js`), and bcryptjs password hashing.
@@ -31,7 +31,7 @@ E-CellCommerce
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```text
 ├── db/
 │   ├── schema.sql       # SQLite tables structure definition
